@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        // Arrays :- The bulk variables is knows as arrays. Collections of multiple values of different types to stroe in it.
+        var arr = [
+                [1, 2, 3, 4, 5],
+                new Array(5),            
+            ];
+        var newArr = new Array(10);
+        // console.log(arr.length);
+        // console.log(newArr.length)    
+        // for(let i = 0; i < 10; i++)
+        //     newArr[i] = i;              
+
+        for(var i = 0; i < arr.length; i++){
+            for(var j = 0; j < arr[i].length; j++){
+                console.log(arr[i][j])
+            }
+        }
+    </script>
+</body>
+</html>
