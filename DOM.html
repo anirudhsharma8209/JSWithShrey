@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Example 1</h1>
+    <h1>Example 2</h1>
+    <h1>Example 3</h1>
+
+    <div class="demoDiv">
+        <p name="para">Anirudh</p>
+    </div>
+    <div>
+        Dummy Not in use
+    </div>
+    <script>
+        // DOM :- Document object modal 
+        // To access the elements from dom we use sepcial key function or methods of document object.
+        // let obj = {
+        //     name : "Anirudh"            
+        // }        
+        // console.log(obj.name)
+
+        // Targating the DOM        
+        // 1. getElementById('')
+        // 2. getElementsByTagName('');
+        // 3. getElenentsBYClassName('');
+        // 4. querySelector('');
+        // 5. querySelectorAll('');
+        // 6. getElementsByName('');
+
+
+        let h1Elemt = document.getElementsByTagName('h1');
+        console.log(h1Elemt) // Return HTMLCollections which is an array
+        let divElemt = document.getElementsByClassName('demoDiv');
+        console.log(divElemt[0].querySelector('p'))
+                
+        // for(let i of h1Elemt){
+        //     console.log(i)
+        // }
+    </script>
+</body>
+</html>
