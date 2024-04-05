@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div>
+        <p>Example</p>
+    </div>
+    <script>
+        let para = document.querySelector('div')
+        // para.innerText = "Demo";
+        let result = para.innerHTML 
+        para.innerHTML = result + "<p>Demo 4</p>"
+        para.style = "color : red; background : cyan;"
+        // para.classList.add('dummy', 'demo')
+        // para.className = "demo";
+        // console.log(para)
+        // para.getAttribute('align')
+        // para.setAttribute('align', 'center')
+        // let divArr = new Array(5)        
+        // let i = 0;
+        // for(let i of divArr){
+        //     divArr[i++] = document.createElement('div');
+        // }
+    </script>
+</body>
+</html>

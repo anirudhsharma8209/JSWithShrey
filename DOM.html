@@ -6,16 +6,24 @@
     <title>DOM</title>
 </head>
 <body>
-    <h1>Example 1</h1>
+    <!-- <h1>Example 1</h1>
     <h1>Example 2</h1>
-    <h1>Example 3</h1>
-
+    <h1>Example 3</h1> -->
+    <!-- <p>Demo</p> -->
     <div class="demoDiv">
-        <p name="para">Anirudh</p>
+        <p name="demo">Anirudh</p>
+        <p>Demo1</p>
+        <p>Demo2</p>
+        <p>Demo3</p>
     </div>
-    <div>
+    <!-- <div>
         Dummy Not in use
     </div>
+
+    <form action="">
+        <input type="text" name="demo" />
+        <input type="text" name="demo">
+    </form> -->
     <script>
         // DOM :- Document object modal 
         // To access the elements from dom we use sepcial key function or methods of document object.
@@ -33,14 +41,23 @@
         // 6. getElementsByName('');
 
 
-        let h1Elemt = document.getElementsByTagName('h1');
-        console.log(h1Elemt) // Return HTMLCollections which is an array
-        let divElemt = document.getElementsByClassName('demoDiv');
-        console.log(divElemt[0].querySelector('p'))
+        // let h1Elemt = document.getElementsByTagName('h1');
+        // console.log(h1Elemt) // Return HTMLCollections which is an array
+        // let divElemt = document.getElementsByClassName('demoDiv');
+        // console.log(divElemt[0].querySelector('p'))
                 
         // for(let i of h1Elemt){
         //     console.log(i)
         // }
+
+
+        // let divSelection = document.querySelectorAll('p');
+        // for(let i of divSelection){
+        //     console.log(i)
+        // }
+        
+        // let names = document.getElementsByName('demo');
+        // console.log(names)      
     </script>
 </body>
 </html>
