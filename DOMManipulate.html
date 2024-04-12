@@ -4,17 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Manipulation</title>
+    <style>
+        *{
+            padding : 0px;
+            margin : 0px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <p>Example</p>
+    <div class="container" style="background-color: cyan;">
+
+
     </div>
     <script>
-        let para = document.querySelector('div')
-        // para.innerText = "Demo";
-        let result = para.innerHTML 
-        para.innerHTML = result + "<p>Demo 4</p>"
-        para.style = "color : red; background : cyan;"
+        let container = document.querySelector('.container');
+        let table = document.createElement('table');        
+        let tBody = document.createElement('tbody');
+        let tr = document.createElement('tr');
+        let rows = new Array(4);
+        for(let  i = 0; i < 4; i ++){            
+            tBody.append(document.createElement('tr'));
+        }        
+        // rows[0].style = ""
+        table.append(tBody);
+        console.log(table)
+        // container.innerText  = "New Value"
+        container.setAttribute('style', "background : red");;
+        // let element = document.createElement('h1');
+        // element.innerText = "Example"
+        // container.append(element)
+        // let eleme = document.createElement('h2');
+        // eleme.innerText = "dummy";
+        // let body = document.querySelector('body')
+        // body.append(element);        
+        // element.innerText = "Change";
+        // body.append(eleme)
+        // body.append(element)
+        // document.write("<h1>Created</h1>")
+        // container.style = "background : red; color : white; font-family : cursive;"
+        // console.log(container)
+        // let para = document.querySelector('div')
+        // // para.innerText = "Demo";
+        // let result = para.innerHTML 
+        // para.innerHTML = result + "<p>Demo 4</p>"
+        // para.style = "color : red; background : cyan;"
         // para.classList.add('dummy', 'demo')
         // para.className = "demo";
         // console.log(para)

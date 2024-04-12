@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        function newFun(dummy){
+            console.log(dummy)
+        }
+
+
+        // const arrow = (arguments) => {
+        //     console.log(arguments)
+        // }
+
+        const myFun = text => {
+            console.log(text)
+            return "Dummy";
+        }
+
+
+        // arrow(1, 2, 3, 4);
+
+        newFun("Dummy Text");
+        myFun("Example Text")
+
+        
+
+        setInterval(function(){
+
+        }, 1000)
+    </script>
+</body>
+</html>
