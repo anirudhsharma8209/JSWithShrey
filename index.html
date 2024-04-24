@@ -6,7 +6,15 @@
     <title>JS File</title>
 </head>
 <body>
-    <script src="Module.js">
+    <script type="module">
+        let Var = require("./index.js");
+        import nm, {Obj} from './index.js'
+        // import * as fileData from './index.js'        
+        // console.log(fileData.Dummy())        
+        nm()
+        console.log(Obj)
+
+        // console.log(Obj)
         // console.log("Work\r")
         // Sepcial keyword to define variables in JS        
         // var  let  const 

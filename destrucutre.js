@@ -27,3 +27,13 @@
 // console.log(array)
 // [name1, name2] = array;
 // console.log(arr)
+
+
+// let arr = ["Anirudh", 21];
+// let [first, second, third] = arr;
+// let Obj = {
+//     name : "Anirudh",
+//     age : 21
+// }
+// let {age, name} = Obj;
+// console.log(name);
