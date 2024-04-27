@@ -1,0 +1,7 @@
+let Object = {
+    Film1 : {Movie_Name : "The Thor", Wood : "Hollywood", Price_Per_Person   : 500, Type: ["Entertainment", " Family", " Comedy"], Description : "Iron Man premiered in Sydney on April 14, 2008, and was released in the United States on May 2, as the first film in Phase One of the MCU. It grossed over $585 million, becoming the eighth-highest.", Image : "https://c4.wallpaperflare.com/wallpaper/24/526/333/iron-man-marvel-comics-wallpaper-preview.jpg" },
+    Film2 : {Movie_Name : "Spiderman Home Coming", Wood : "Hollywood", Price_Per_Person : 350, Type : ["Action", " Friends", "Thriller"], Description : "Spider-Man is a 2002 American superhero film based on the Marvel Comics character of the same name. Directed by Sam Raimi from a screenplay by David Koepp, it is the first installment." , Image : "https://c4.wallpaperflare.com/wallpaper/591/844/1024/spider-man-spider-video-games-superhero-wallpaper-preview.jpg"},
+    Film3 : {Movie_Name : "Captain America", Wood : "Hollywood", Price_Per_Person : 450, Type : ["Romace", " Loved Once", " Emotional"], Description : "The film was directed by Joe Johnston, written by Christopher Markus and Stephen McFeely, and stars Chris Evans as Steve Rogers / Captain America alongside Tommy Lee Jones.", Image : "https://c4.wallpaperflare.com/wallpaper/931/314/378/captain-america-black-panther-marvel-cinematic-universe-marvel-comics-wallpaper-preview.jpg"}
+}
+
+export {Object};
