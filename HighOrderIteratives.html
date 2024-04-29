@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Order Iteratives</title>
+</head>
+<body>
+    <script>       
+        // 1. forEach 2. map 3. filter 4. find 5.indexOf
+        let dummyArr = [101, "String", true, {address : ["14/239", "XYZ street", 305001]}, ["BCA", "MCA"]];
+
+        let nums = [1, 2, 3, 4];
+
+        // console.log(nums.forEach((item) => {          
+        //     return item += 10;
+        // }));
+
+        // map                
+        // nums.map(function(value, index, arr, PI = 3.14){            
+        //     console.log(value, index, arr)            
+        //     // return value += 10;
+        // });
+        // nums.map((value) => value += 10);
+        // nums.map(v => v += 1);
+
+        // Filter         
+        nums = nums.filter((value, index, arr) => {
+            console.log(value)
+            if(value < 3){
+                return true
+            }
+            return false;
+        })
+
+        console.log(nums);
+    </script>
+</body>
+</html>

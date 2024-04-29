@@ -8,24 +8,33 @@
 <body>  
     <script type="module">
         import {Object as Obj} from './index.js';                
+        let Obje = {
+            name : "XYZ",
+            age : 21
+        }
+        Object.freeze(Obje);
+        // Obje.age = 25;
+        console.log(Obje)
+        // Obje.age = 25;
+        // console.log(Obje)
         // console.log(Object.keys(Obj));
         // console.log(Object.values(Obj))
-        // for(let i in Obj){            
-        //     // console.log(Obj[i]);            
-        //     for(let  j in Obj[i]){
-        //         if(j >= 'Description'){
-        //             console.log(Obj[i][j])
+        // for(let i in Obj){                        
+        //     for(let j in Obj[i]){
+        //         if(j >= 'Price_Per_Person'){
+        //             console.log(j)
+        //             // console.log(Obj[i][j])
         //             // console.log(Object[i][j]);            
         //         }                
         //     }
         // }
 
-        () => "Example";
+        // () => "Example";
         
 
-        (function() {
-            console.log("eif")
-        })()    
+        // (function() {
+        //     console.log("eif")
+        // })()    
 
         console.log(setTimeout(() => {
             console.log("Set Timeout");
