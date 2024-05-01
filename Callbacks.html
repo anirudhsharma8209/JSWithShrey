@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+<body>
+    <div>Loading</div>
+    <script>
+
+        // setTimeot setInterval 
+        // Promises
+        // asyn await
+        // fetch
+        // axios
+        let person = {
+            name : "Deepak",
+            age : 25,
+            address : ["14/239", "XYZ"]
+        }
+        // let div = document.querySelector("div");
+        // setTimeout(() => {
+        //     div.style = "display : none";
+        // }, 1000)
+        // setTimeout
+        // console.log("First line");
+        // setTimeout(function() {
+        //     console.log(person);
+        //     setTimeout(() => {
+        //         // console.log("Third line");
+        //         person.designation = "Manager";
+        //         console.log(person);
+        //     }, 1000)
+        // }, 1000);
+
+        // setInterval
+        let rec = setInterval(()=>{
+            console.log("Callback")
+        }, 1000);
+        setTimeout(() => {
+            clearInterval(rec);
+        }, 5000)
+
+
+        let pr = new Promise((resolve, rej) => {            
+            if(true){
+                return resolve({Success : "response : 200"});
+            }else{
+                return rej();
+            }
+        });
+        pr.then((response) => {
+            console.log(response)
+        }).catch()
+        // Reslove
+        // Reject
+        // Pending
+    </script>
+</body>
+</html>
