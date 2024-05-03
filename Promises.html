@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <script>        
+        let successObj = {
+            data : ["Pizza", "Pasta", "XYZ"],
+            status : 300
+        }
+        let newPro = new Promise(function(reslove, reject){
+            setTimeout(() => {
+                if(successObj.status === 200){
+                    return reslove(successObj);
+                }
+                return reject("Error occur");
+            } , 1000)            
+        });
+        newPro.then(function(rec){
+            console.log(rec);
+        }).catch((err) => {
+            console.log(err);
+        })
+
+
+        // getBranch {branchName : "", branchLoction : "", branchMember : 50}
+        // getEmployee {employeeName : "", employeeBranch : branchName, employeeSalary : 45000}
+        // getEmployeeDetails {employeeName : "", branchName : "", employeeSalary : 45000}
+    </script>
+</body>
+</html>
