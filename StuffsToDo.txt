@@ -1,0 +1,13 @@
+1. Default keyword ✅
+2. Temporal deadzone
+3. Event loop ✅
+4. Eif ✅
+5. Deep copy and Shallow copy 
+6. Advance Iterables ✅ Map, filter, forEach, find
+
+Promises Assignments :-
+    1. getCollege (collegeId, collegeName, collegeLocation)
+    2. getTeacher (teacherId, collegeId, teacherName, teacherQualification)
+    3. getCourse (courseId, teacherId, courseName, courseDuration, courseFee) 
+    4. getStudent (studentId, collegeId, courseId,  studentName, studentClass)        
+    5. getStudentResult (resultId, studentName, courseName) Mentoning complete course result
