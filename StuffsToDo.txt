@@ -3,7 +3,7 @@
 3. Event loop ✅
 4. Eif ✅
 5. Deep copy and Shallow copy 
-6. Advance Iterables ✅ Map, filter, forEach, find
+6. Advance Iterables ✅ Map, filter, forEach, find 
 
 Promises Assignments :-
     1. getCollege (collegeId, collegeName, collegeLocation)

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Await</title>
+</head>
+<body>
+    <script>
+        let result = fetch('https://dummyjson.com/products')
+        .then((response) => {
+            return response.json()
+        }).then(() => {
+            
+        }).catch(() => {
+            console.log("Error")
+        }) 
+        // console.log(result)      
+        result.then((data) => {
+            for(let i in data){
+                if(i == "products"){
+                    for(let j of data[i]){
+                        console.log(j)
+                    }
+                }
+            }
+        }) 
+
+    </script>
+</body>
+</html>
