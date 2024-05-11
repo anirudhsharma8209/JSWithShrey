@@ -4,6 +4,7 @@
 4. Eif ✅
 5. Deep copy and Shallow copy 
 6. Advance Iterables ✅ Map, filter, forEach, find 
+7. Closure
 
 Promises Assignments :-
     1. getCollege (collegeId, collegeName, collegeLocation)
