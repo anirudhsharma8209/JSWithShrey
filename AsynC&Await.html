@@ -9,6 +9,7 @@
     <script>
         async function getData(){
             let result = await fetch('https://dummyjson.com/products')
+            console.log(result);
             let response = await result.json();                               
             console.log(response.products[0].title)
         }
