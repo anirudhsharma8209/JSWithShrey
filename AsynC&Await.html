@@ -7,13 +7,13 @@
 </head>
 <body>
     <script>
-        async function getData(){
-            let result = await fetch('https://dummyjson.com/products')
-            console.log(result);
-            let response = await result.json();                               
-            console.log(response.products[0].title)
+        async function getData(URL){
+            let result = await fetch(URL)            
+            let response = await result.json();                                           
         }
-        getData();
+
+        let URL = "https://dummyjson.com/products"
+        getData(URL);
     </script>
 </body>
 </html>

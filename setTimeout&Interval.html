@@ -7,14 +7,17 @@
 </head>
 <body>
     <script>
-        // setTimeout(() => {
-        //     console.log("Your Function")
-        // }, 1000)
+        setTimeout(() => {
+            console.log("Your Function")
+        }, 1000)
 
-        // let status = setInterval(() => {
-        //     console.log("Interval")
-        //     clearInterval(status);
-        // }, 2000)        
+        let status = setInterval(() => {
+            console.log("Interval")
+        }, 1000)          
+              
+        setTimeout(() => {
+            clearInterval(status);
+        }, 5000)
     </script>
 </body>
 </html>

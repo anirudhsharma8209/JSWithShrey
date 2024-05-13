@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+</head>
+<body>
+    <script type="module">
+        import username from './index.js'
+        import * as fileData from './index.js'
+        username();
+        fileData.default()
+        console.log(fileData.obj)        
+        fileData.getDetail(fileData.obj);     
+    </script>
+</body>
+</html>

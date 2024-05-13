@@ -6,7 +6,7 @@
     <title>Assignment</title>
 </head>
 <body>  
-    <script type="module">
+    <script>
         import {Object as Obj} from './index.js';                
         let Obje = {
             name : "XYZ",
@@ -15,26 +15,27 @@
         Object.freeze(Obje);
         // Obje.age = 25;
         console.log(Obje)
-        // Obje.age = 25;
-        // console.log(Obje)
-        // console.log(Object.keys(Obj));
-        // console.log(Object.values(Obj))
-        // for(let i in Obj){                        
-        //     for(let j in Obj[i]){
-        //         if(j >= 'Price_Per_Person'){
-        //             console.log(j)
-        //             // console.log(Obj[i][j])
-        //             // console.log(Object[i][j]);            
-        //         }                
-        //     }
-        // }
+        Obje.age = 25;
+        console.log(Obje)
+        console.log(Object.keys(Obj));
+        console.log(Object.values(Obj))
+        for(let i in Obj){                        
+            for(let j in Obj[i]){
+                if(j >= 'Price_Per_Person'){
+                    console.log(j)
+                    console.log(Obj[i][j])
+                    console.log(Object[i][j]);            
+                }                
+            }
+        }
 
-        // () => "Example";
+        // Anomious function with return statement 
+        () => "Example";
         
 
-        // (function() {
-        //     console.log("eif")
-        // })()    
+        (function() {
+            console.log("eif")
+        })()    
 
         console.log(setTimeout(() => {
             console.log("Set Timeout");
@@ -42,9 +43,9 @@
 
         window.clearTimeout();
 
-        // (function() {
-        //     console.log("Eif");
-        // })()
+        (function(name) {
+            console.log(name);
+        })("Anirudh")
 
     </script>
 </body>
